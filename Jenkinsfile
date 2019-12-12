@@ -44,6 +44,12 @@ pipeline {
           }
         }
 
+        stage('Pruebas de rendimiento') {
+          steps {
+            build 'ejecutar las tareas de rendimiento'
+          }
+        }
+
       }
     }
 
