@@ -15,6 +15,18 @@ pipeline {
           }
         }
 
+        stage('create css') {
+          steps {
+            echo 'crear css'
+          }
+        }
+
+      }
+    }
+
+    stage('Pruebas') {
+      steps {
+        echo 'Mostrar pruebas'
       }
     }
 
