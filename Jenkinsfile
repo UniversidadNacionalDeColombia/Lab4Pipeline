@@ -50,6 +50,12 @@ pipeline {
           }
         }
 
+        stage('') {
+          steps {
+            git(url: 'https://github.com/UniversidadNacionalDeColombia/Lab4Pipeline', branch: 'prueba-resposive')
+          }
+        }
+
       }
     }
 
