@@ -21,6 +21,12 @@ pipeline {
           }
         }
 
+        stage('crear los repositorios') {
+          steps {
+            echo 'crear reporte'
+          }
+        }
+
       }
     }
 
