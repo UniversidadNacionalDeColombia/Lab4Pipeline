@@ -46,7 +46,7 @@ pipeline {
 
         stage('Pruebas de rendimiento') {
           steps {
-            build 'ejecutar las tareas de rendimiento'
+            echo 'pruebas de rendimiento'
           }
         }
 
