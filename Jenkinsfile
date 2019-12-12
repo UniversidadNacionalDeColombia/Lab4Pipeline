@@ -50,9 +50,9 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
-            git(url: 'https://github.com/UniversidadNacionalDeColombia/Lab4Pipeline', branch: 'prueba-resposive')
+            echo 'Pruebas de rendimiento'
           }
         }
 
