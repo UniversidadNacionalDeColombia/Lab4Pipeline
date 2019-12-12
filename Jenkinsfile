@@ -25,8 +25,19 @@ pipeline {
     }
 
     stage('Pruebas') {
-      steps {
-        echo 'Mostrar pruebas'
+      parallel {
+        stage('Pruebas') {
+          steps {
+            echo 'Mostrar pruebas'
+          }
+        }
+
+        stage('Pruebas del responsive') {
+          steps {
+            echo 'testear el responsive'
+          }
+        }
+
       }
     }
 
