@@ -15,6 +15,12 @@ pipeline {
           }
         }
 
+        stage('create css') {
+          steps {
+            echo 'crear css'
+          }
+        }
+
       }
     }
 
