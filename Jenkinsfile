@@ -24,5 +24,11 @@ pipeline {
       }
     }
 
+    stage('Pruebas') {
+      steps {
+        echo 'Mostrar pruebas'
+      }
+    }
+
   }
 }
