@@ -2,5 +2,5 @@
 Laboratorio 4
 
 Juan Pablo Betanourt Maldonado </br>
-Jaime Eduardo Estupiñan <\br>
-Andrés Felipe Castillo <\br>
+Jaime Eduardo Estupiñan </br>
+Andrés Felipe Castillo </br>
