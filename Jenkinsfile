@@ -9,13 +9,13 @@ pipeline {
 
     stage('Pruebas') {
       parallel {
-        stage('Pruebas') {
+        stage('pruebas del responsive') {
           steps {
             echo 'Mostrar pruebas'
           }
         }
 
-        stage('pruebas del responsive') {
+        stage('QA') {
           steps {
             echo 'testear el responsive'
           }
@@ -38,19 +38,19 @@ pipeline {
 
     stage('Seguridad') {
       parallel {
-        stage('Seguridad') {
+        stage('audit') {
           steps {
             echo 'Ver parÃƒÆ’Ã‚Â¡metros de seguridad'
           }
         }
 
-        stage('PENTEST INTERNO') {
+        stage('pentest interno') {
           steps {
             echo 'Pentest interno es tambiÃƒÂ©n conocido como la evaluaciÃƒÂ³n interna. Pentest interno es una evaluaciÃƒÂ³n crÃƒÂ­tica, sistemÃƒÂ¡tica y detallada de redes informÃƒÂ¡ticas. Generalmente un pentest interno es realizado por los profesionales de empresa de pentesting, '
           }
         }
 
-        stage('PENTEST EXTERNO ') {
+        stage('pentest externo') {
           steps {
             echo 'Pentest externo es tambiÃƒÂ©n conocido como evaluaciÃƒÂ³n externa. Pentest externo es una evaluaciÃƒÂ³n crÃƒÂ­tica, sistemÃƒÂ¡tica y detallada de redes informÃƒÂ¡ticas desde afuera. Generalmente un pentest externo es realizado por los profesionales de empresa de pentesting, utilizando tÃƒÂ©cnicas establecidas con el objeto de emitir informes y formular sugerencias para el mejoramiento de la seguridad. '
           }
@@ -61,7 +61,7 @@ pipeline {
 
     stage(' Puesta en escena') {
       parallel {
-        stage(' puesta en escen') {
+        stage('validacion de la integracion') {
           steps {
             echo 'puesta en escena'
           }
