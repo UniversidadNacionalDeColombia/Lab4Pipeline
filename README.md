@@ -1,6 +1,6 @@
-# Lab4Pipeline
-Laboratorio 4
+# DEVOPS TOPICS
 
-Juan Pablo Betanourt Maldonado
-Jaime Eduardo Estupiñan
-Tom Erick Perez
+## Integrantes:
+>* Jaime Estupiñan
+>* Juan Betancourt
+>* Tom Perez
