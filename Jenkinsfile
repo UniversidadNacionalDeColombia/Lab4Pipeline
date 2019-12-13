@@ -50,12 +50,12 @@ pipeline {
           }
         }
 
-        stage('error') {
-          steps {
-            echo 'Pruebas de rendimiento'
-          }
-        }
+      }
+    }
 
+    stage('Seguridad') {
+      steps {
+        echo 'Ver parámetros de seguridad'
       }
     }
 
