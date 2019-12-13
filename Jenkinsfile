@@ -54,8 +54,25 @@ pipeline {
     }
 
     stage('Seguridad') {
-      steps {
-        echo 'Ver parámetros de seguridad'
+      parallel {
+        stage('Seguridad') {
+          steps {
+            echo 'Ver parÃ¡metros de seguridad'
+          }
+        }
+
+        stage('PENTEST INTERNO') {
+          steps {
+            echo 'Pentest interno es también conocido como la evaluación interna. Pentest interno es una evaluación crítica, sistemática y detallada de redes informáticas. Generalmente un pentest interno es realizado por los profesionales de empresa de pentesting, '
+          }
+        }
+
+        stage('PENTEST EXTERNO ') {
+          steps {
+            echo 'Pentest externo es también conocido como evaluación externa. Pentest externo es una evaluación crítica, sistemática y detallada de redes informáticas desde afuera. Generalmente un pentest externo es realizado por los profesionales de empresa de pentesting, utilizando técnicas establecidas con el objeto de emitir informes y formular sugerencias para el mejoramiento de la seguridad. '
+          }
+        }
+
       }
     }
 
