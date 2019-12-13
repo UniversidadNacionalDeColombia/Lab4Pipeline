@@ -2,5 +2,5 @@
 Laboratorio 4
 
 Juan Pablo Betanourt Maldonado </br>
-Jaime Eduardo Estupiñan
-Tom Erick Perez
+Jaime Eduardo Estupiñan </br>
+Tom Erick Perez </br>
