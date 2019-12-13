@@ -57,19 +57,42 @@ pipeline {
       parallel {
         stage('Seguridad') {
           steps {
-            echo 'Ver parÃ¡metros de seguridad'
+            echo 'Ver parÃƒÂ¡metros de seguridad'
           }
         }
 
         stage('PENTEST INTERNO') {
           steps {
-            echo 'Pentest interno es también conocido como la evaluación interna. Pentest interno es una evaluación crítica, sistemática y detallada de redes informáticas. Generalmente un pentest interno es realizado por los profesionales de empresa de pentesting, '
+            echo 'Pentest interno es tambiÃ©n conocido como la evaluaciÃ³n interna. Pentest interno es una evaluaciÃ³n crÃ­tica, sistemÃ¡tica y detallada de redes informÃ¡ticas. Generalmente un pentest interno es realizado por los profesionales de empresa de pentesting, '
           }
         }
 
         stage('PENTEST EXTERNO ') {
           steps {
-            echo 'Pentest externo es también conocido como evaluación externa. Pentest externo es una evaluación crítica, sistemática y detallada de redes informáticas desde afuera. Generalmente un pentest externo es realizado por los profesionales de empresa de pentesting, utilizando técnicas establecidas con el objeto de emitir informes y formular sugerencias para el mejoramiento de la seguridad. '
+            echo 'Pentest externo es tambiÃ©n conocido como evaluaciÃ³n externa. Pentest externo es una evaluaciÃ³n crÃ­tica, sistemÃ¡tica y detallada de redes informÃ¡ticas desde afuera. Generalmente un pentest externo es realizado por los profesionales de empresa de pentesting, utilizando tÃ©cnicas establecidas con el objeto de emitir informes y formular sugerencias para el mejoramiento de la seguridad. '
+          }
+        }
+
+      }
+    }
+
+    stage(' puesta en escena') {
+      parallel {
+        stage(' puesta en escena') {
+          steps {
+            echo 'puesta en escena'
+          }
+        }
+
+        stage('Deploy') {
+          steps {
+            echo 'Poner la aplicación en un host'
+          }
+        }
+
+        stage('gestión del dominio') {
+          steps {
+            echo 'gestión del dominio'
           }
         }
 
