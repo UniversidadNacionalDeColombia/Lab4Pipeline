@@ -6,7 +6,6 @@ pipeline {
         stage('BuildLab4') {
           steps {
             echo 'Lab 4 Pipeline'
-            error 'build finished'
           }
         }
 
@@ -97,7 +96,7 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
             error 'verificar que el dominio sirva el dominio'
           }
