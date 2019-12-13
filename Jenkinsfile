@@ -96,6 +96,12 @@ pipeline {
           }
         }
 
+        stage('validaciones de las conexiones de red') {
+          steps {
+            echo 'validaciones de las conexiones de red'
+          }
+        }
+
       }
     }
 
