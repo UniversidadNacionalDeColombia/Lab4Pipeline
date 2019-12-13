@@ -10,11 +10,13 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400,500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/fontello.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="bootstrap/styles.css"/>
+    <link rel="stylesheet" href="bootstrap/fontello.css"/>
+    <script src="javascript/code.js"></script>
+</head>
 </head>
 
-<body>
+<body onload="startTime()">
     <div class="container-fluid">
         <div class="row">
             <div class="barra-lateral col-12 col-sm-auto">
@@ -31,8 +33,12 @@
             </div>
             <main class="main col">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 textcenter">
                         <h1>Esta es una pagina de prueba para poder hacer las tareas del pipeline.</h1>
+                        <hr/>
+                        <h3>Tiempo real:</h3>
+                        <div id="txt" class=""></div>
+                        <hr/>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore alias aliquid veritatis
                             porro repellendus cupiditate impedit facilis ex esse ipsam fugit culpa tenetur maxime nisi
                             eos veniam recusandae dignissimos, voluptatum laboriosam reiciendis aut voluptatem repellat
