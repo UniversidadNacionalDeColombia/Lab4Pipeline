@@ -96,12 +96,6 @@ pipeline {
           }
         }
 
-        stage('error') {
-          steps {
-            error 'verificar que el dominio sirva el dominio'
-          }
-        }
-
       }
     }
 
