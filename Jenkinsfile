@@ -76,7 +76,7 @@ pipeline {
       }
     }
 
-    stage(' puesta en escena') {
+    stage(' Puesta en escena') {
       parallel {
         stage(' puesta en escena') {
           steps {
@@ -105,9 +105,15 @@ pipeline {
       }
     }
 
-    stage('validacion Requerimientos') {
+    stage('Validacion Requerimientos') {
       steps {
         echo 'Produccionvalidacion Requerimientos'
+      }
+    }
+
+    stage('Produccion') {
+      steps {
+        echo 'Produccion'
       }
     }
 
