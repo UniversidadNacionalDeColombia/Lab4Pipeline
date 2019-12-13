@@ -61,7 +61,7 @@ pipeline {
 
     stage(' Puesta en escena') {
       parallel {
-        stage(' puesta en escena') {
+        stage(' puesta en escen') {
           steps {
             echo 'puesta en escena'
           }
