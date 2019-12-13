@@ -1,4 +1,4 @@
-# PATTERNS
+# DEVOPS TOPICS
 
 ## Integrantes:
 >* Jaime Estupiñan
