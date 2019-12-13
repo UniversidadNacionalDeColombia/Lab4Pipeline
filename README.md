@@ -1,6 +1,6 @@
-# Lab4Pipeline
-Laboratorio 4
+# PATTERNS
 
-Juan Pablo Betanourt Maldonado </br>
-Jaime Eduardo Estupiñan </br>
-Tom Erick Perez </br>
+## Integrantes:
+>* Jaime Estupiñan
+>* Juan Betancourt
+>* Tom Perez
