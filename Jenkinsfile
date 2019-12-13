@@ -105,7 +105,7 @@ pipeline {
       }
     }
 
-    stage('Validacion Requerimientos') {
+    stage('Validacion de tokens') {
       steps {
         echo 'Produccionvalidacion Requerimientos'
       }
