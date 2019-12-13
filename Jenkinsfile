@@ -105,9 +105,9 @@ pipeline {
       }
     }
 
-    stage('Produccion') {
+    stage('validacion Requerimientos') {
       steps {
-        echo 'Producción'
+        echo 'Produccionvalidacion Requerimientos'
       }
     }
 
