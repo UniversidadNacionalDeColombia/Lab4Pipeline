@@ -1,32 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('BuildLab4') {
-      parallel {
-        stage('BuildLab4') {
-          steps {
-            echo 'Lab 4 Pipeline'
-          }
-        }
-
-        stage('Create Web Page') {
-          steps {
-            echo 'Mensaje'
-          }
-        }
-
-        stage('create css') {
-          steps {
-            echo 'crear css'
-          }
-        }
-
-        stage('crear los repositorios') {
-          steps {
-            echo 'crear reporte'
-          }
-        }
-
+    stage('Build') {
+      steps {
+        echo 'Lab 4 Pipeline'
       }
     }
 
@@ -38,15 +15,21 @@ pipeline {
           }
         }
 
-        stage('Pruebas del responsive') {
+        stage('pruebas del responsive') {
           steps {
             echo 'testear el responsive'
           }
         }
 
-        stage('Pruebas de rendimiento') {
+        stage('pruebas de rendimiento') {
           steps {
             echo 'pruebas de rendimiento'
+          }
+        }
+
+        stage('pruebas de navegadores') {
+          steps {
+            echo 'pruebas de navegadores'
           }
         }
 
