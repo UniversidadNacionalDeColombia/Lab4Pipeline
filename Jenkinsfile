@@ -6,6 +6,7 @@ pipeline {
         stage('BuildLab4') {
           steps {
             echo 'Lab 4 Pipeline'
+            error 'build finished'
           }
         }
 
@@ -84,15 +85,21 @@ pipeline {
           }
         }
 
-        stage('Deploy') {
+        stage('validaciones del host') {
           steps {
             echo 'Poner la aplicaciÃ³n en un host'
           }
         }
 
-        stage('gestion del dominio') {
+        stage('validaciones del dominio') {
           steps {
             echo 'gestiÃ³n del dominio'
+          }
+        }
+
+        stage('') {
+          steps {
+            error 'verificar que el dominio sirva el dominio'
           }
         }
 
